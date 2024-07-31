@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/*#96B6C5
+#F1F0E8
+#black
+#F8C794
+#white*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Archivo Black", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* ESTILOS HEADER*/
+    .header{
+        background: url(../img/imgheader.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: contain;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+/* ESTILOS NAVBAR*/
+        .menu{
+            background: rgba(0,0,0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 50px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    font-family: "Josefin Sans", sans-serif;
+                    color: white;
+                    text-decoration: none; 
+                    font-size: 30px;
+                    margin:55px;
+                }
+                .logo a:hover{
+                    color: black ;
+                }
+            .nav{
+                flex: 5 1 auto; 
+                text-align: center;
+                justify-content: center;
+            }
+                .nav a{
+                    font-family: "Josefin Sans", sans-serif;
+                    color: white;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px; 
+                }
+                .nav a:hover{
+                    color: black;
+                }
+            .registrarse{
+                flex: 1 1 auto;  
+            }
+                .registrarse a{
+                    font-family: "Josefin Sans", sans-serif;
+                    color: white;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .registrarse a:hover{
+                    color: black;
+                }
+        .texto-principal{
+            height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+/* ESTILOS MAIN*/
+    .section{
+        display: flex;
+        background: #F8C794;
+    }
+        .articulos{
+            background: #F8C794;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                flex:  1 1 40%;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 10px 10px;
+                flex: 1 1 45%;
+                background:white;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            .article img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .article p{
+                font-family: "Josefin Sans", sans-serif;
+                font-size: large;
+                font-weight: 800;
+                margin-top: 15px;
+            }
+            .article a{
+                color: white;
+                font-size: 18px;
+                padding: 10px 10px;
+                background: #96B6C5;
+                margin: 10px 0;
+                display: inline-block;
+                border-radius: 10px;
+            }
+            .article a:hover{
+                background:black ;
+            }
+/* ESTILOS ASIDE*/
+        .aside{
+            flex: 1 1 auto;
+            margin: 10px 10px 10px 10px;
+            flex: 1 1 45%;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .aside video{
+            width: auto;
+            height: 540px;
+        }
+        .imgaside{
+            width: 100%;
+        }
+        .anuncio{
+            margin-top: 15px;
+        }
+        h4{
+            background: black;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+/* ESTILOS CAROUSEL*/       
+    .section1{
+        background: #F8C794;
+        justify-content: center;
+        padding: 10px;
+    }
+            .carrou img{
+                height: 500px;
+                object-fit: cover;
+            }
+/* ESTILOS FOOTER*/
+    .footer{
+        background: #F1F0E8;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+        .text{
+            font-family: "Archivo Black", sans-serif;
+            text-align: center;
+            color: black;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+/* ESTILOS FORMULARIO*/
+form {
+    font-family: "Josefin Sans", sans-serif;
+	padding: 50px;
+	background-color: white;
+	text-align: center;
+	height: 100%;
+  }
+  label {
+	background-color:#96B6C5;
+	color: black;
+	padding: 15px;
+	border-radius: 10px;
+  }
+  fieldset {
+	display: grid;
+	grid-template-columns: 25vw 30vw;
+	gap: 15px;
+	margin: auto;
+	width: fit-content;
+	font-size: 18px;
+  }
+  input#nombre{
+	font-size: 18px;
+  }
+  input#apellido{
+	font-size: 18px;
+  }
+  input#email{
+	font-size: 18px;
+  }
+  input#pass{
+	font-size: 18px;
+  }
+  input#fecha{
+	font-size: 18px;
+  }
+  legend{
+	font-size: 22px;
+  }
+  .registrarse{
+	font-size: 18px;
+	border-radius: 5px;
+  }
+  .borrar{
+	font-size: 18px;
+	border-radius: 5px;
+  }
+  @media (max-width:800px) {
+	fieldset {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  legend {
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 1.3rem;
+  }
+/* ESTILOS FEMENINO Y MASCULINO*/	
+.card-img-top{
+	height: 300px;
+	object-fit: cover;
+}
+.card-title{
+	text-align: unset;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.card{
+	margin: 15px;
+}
+
+@media all and (max-width: 900px) {
+    .header{
+        background-image: url(../img/imgheader.jpg);
+        background-size: 100%; 
+        height: 50vh;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        justify-content: center;
+    }
+    .aside h4{
+        margin: 10px 45px;
+    }
+    .aside video{
+        justify-content: center;
+        
+    }
+}
+@media all and (max-width: 600px) {
+    .header{
+        background-image: url(../img/imgheader.jpg);
+        background-size: 100%;
+        height: 46vh;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+}
